@@ -1,0 +1,209 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    color: #222;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* UPLOAD */
+.upload-section {
+    background: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.upload-box {
+    display: block;
+    border: 2px dashed #2a5298;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #f9fbff;
+    margin-bottom: 20px;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.primary-btn {
+    background: #2a5298;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #1e3c72;
+}
+
+/* SECTIONS */
+.section-title {
+    background: #e8eef7;
+    padding: 12px 20px;
+    border-left: 6px solid #2a5298;
+    margin-top: 40px;
+}
+
+/* CAREER CARDS */
+.career-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.career-grid div {
+    background: #f5f7fb;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* GENERAL */
+ul {
+    padding-left: 20px;
+}
+
+h2, h3 {
+    color: #1e3c72;
+}
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    color: #222;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* UPLOAD */
+.upload-section {
+    background: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.upload-box {
+    display: block;
+    border: 2px dashed #2a5298;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #f9fbff;
+    margin-bottom: 20px;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.primary-btn {
+    background: #2a5298;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #1e3c72;
+}
+
+/* SECTIONS */
+.section-title {
+    background: #e8eef7;
+    padding: 12px 20px;
+    border-left: 6px solid #2a5298;
+    margin-top: 40px;
+}
+
+/* CAREER CARDS */
+.career-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.career-grid div {
+    background: #f5f7fb;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* GENERAL */
+ul {
+    padding-left: 20px;
+}
+
+h2, h3 {
+    color: #1e3c72;
+}
+
+.project-card {
+    border-left: 4px solid #2a5298;
+    background: #f9fbff;
+}
+
+.project-card h3 {
+    color: #1f3c88;
+    margin-bottom: 6px;
+}
+
+.project-card p {
+    color: #333;
+    line-height: 1.6;
+}

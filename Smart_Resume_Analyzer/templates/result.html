@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Analysis Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<section class="container">
+
+    <h1>Career Analysis Result</h1>
+
+    <!-- ATS SCORE -->
+    <h2 class="section-title">ATS Resume Score</h2>
+    <div class="career-card">
+        <p><strong>{{ ats_score }}%</strong></p>
+        <div style="background:#ddd; border-radius:6px;">
+            <div style="width:{{ ats_score }}%; background:#2a5298; color:white; padding:6px; border-radius:6px;">
+                {{ ats_score }}%
+            </div>
+        </div>
+    </div>
+
+    <!-- DOMAIN -->
+    <h2 class="section-title">Detected Domain</h2>
+    <div class="career-card">
+        <p><strong>{{ domain }}</strong></p>
+    </div>
+
+    <!-- SKILLS -->
+    <h2 class="section-title">Skills Identified</h2>
+    <div class="career-card">
+        {% if skills %}
+            <ul>
+                {% for skill in skills %}
+                    <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No clear skills identified.</p>
+        {% endif %}
+    </div>
+
+    <!-- PROJECTS  -->
+<h2 class="section-title">Projects</h2>
+
+{% if projects %}
+    {% for project in projects %}
+        <div class="career-card">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No projects detected.</p>
+{% endif %}
+
+
+
+    <!-- INTERNSHIP -->
+    <h2 class="section-title">Internship Details</h2>
+    <div class="career-card">
+        {% if internship %}
+            <p>{{ internship }}</p>
+        {% else %}
+            <p>No internship details found.</p>
+        {% endif %}
+    </div>
+
+    <!-- CAREER GUIDANCE & MARKET INSIGHTS -->
+    <h2 class="section-title">Career Guidance & Market Insights</h2>
+
+    {% for job in jobs %}
+        <div class="career-card">
+
+            <h3>{{ job.title }}</h3>
+
+            <div class="career-grid">
+                <div>
+                    <strong>Average Salary (India)</strong>
+                    <p>{{ job.salary_india }}</p>
+                </div>
+
+                <div>
+                    <strong>Average Salary (Abroad)</strong>
+                    <p>{{ job.salary_abroad }}</p>
+                </div>
+
+                <div>
+                    <strong>High Demand Cities</strong>
+                    <p>{{ job.cities }}</p>
+                </div>
+
+                <div>
+                    <strong>Top Hiring Companies</strong>
+                    <p>{{ job.companies }}</p>
+                </div>
+            </div>
+
+            <p><strong>Training Requirement:</strong> {{ job.training }}</p>
+
+            <p>
+                <strong>Skill Gap:</strong>
+                {{ job.skill_gap | join(", ") if job.skill_gap else "No major gaps identified" }}
+            </p>
+
+            <p><strong>Recommended Courses:</strong></p>
+            <ul>
+                {% for course in job.courses %}
+                    <li>{{ course }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    {% endfor %}
+
+    <!-- CAREER REPORT -->
+    <h2 class="section-title">Career Report</h2>
+    <div class="career-card">
+        <a href="{{ report_path }}" download>
+          📄 Download Career Report (PDF)
+         </a>
+    </div>
+
+    <!-- BACK -->
+    <div style="margin-top:30px;">
+        <a href="/" class="primary-btn">← Analyze Another Resume</a>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+job_title,domain,skills,salary_india,salary_abroad,cities,countries,companies
+Python Developer,CSE,python flask sql,6-12 LPA,70k-110k USD,Bangalore Hyderabad Pune,India USA Infosys TCS Accenture
+Data Analyst,CSE,python data analysis sql,5-10 LPA,65k-105k USD,Bangalore Mumbai Chennai,India USA Deloitte IBM
+ML Engineer,CSE,python machine learning,8-18 LPA,90k-150k USD,Bangalore San Francisco,India USA Google Amazon
+
+Mechanical Design Engineer,MECHANICAL,autocad solidworks,5-9 LPA,60k-90k USD,Chennai Coimbatore,India Germany Bosch L&T
+Production Engineer,MECHANICAL,manufacturing hvac,4-8 LPA,55k-85k USD,Pune Chennai,India Germany Tata Motors
+
+Site Engineer,CIVIL,construction surveying,4-8 LPA,50k-80k USD,Delhi Mumbai,India UAE Larsen & Toubro
+Structural Engineer,CIVIL,etabs structural analysis,6-12 LPA,70k-100k USD,Hyderabad Dubai,India UAE AECOM
+
+Accountant,ARTS,accounting tally finance,3.5-7 LPA,50k-75k USD,Chennai Bangalore,India UK KPMG EY
+Business Analyst,ARTS,business analysis excel,6-12 LPA,70k-110k USD,Bangalore London,India UK McKinsey
+Digital Marketer,ARTS,marketing content writing,4-9 LPA,55k-90k USD,Bangalore Mumbai,India USA Amazon Flipkart

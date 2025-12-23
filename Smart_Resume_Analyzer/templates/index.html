@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Resume Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- HERO (INTRO ONLY) -->
+<section class="hero">
+    <h1>Smart Resume Analyzer</h1>
+    <p>
+        AI-powered resume analysis with ATS scoring, domain detection,
+        job recommendations, salary insights, and career guidance across
+        Engineering, Commerce, Arts, Creative, and IT domains.
+    </p>
+</section>
+
+<!-- UPLOAD SECTION (ONLY ONCE) -->
+<section class="upload-section">
+    <h2>Upload Your Resume</h2>
+    <p class="subtitle">
+        Supported format: <strong>PDF</strong> |
+        Engineering • Commerce • Arts • Creative • IT
+    </p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+        <label class="upload-box">
+            <input type="file" name="resume" id="resumeInput" accept=".pdf" required>
+            <span id="fileLabel">📄 Click here to upload your resume</span>
+        </label>
+
+        <button type="submit" class="primary-btn">Analyze Resume</button>
+    </form>
+</section>
+
+<script>
+const input = document.getElementById("resumeInput");
+const label = document.getElementById("fileLabel");
+
+input.addEventListener("change", function () {
+    if (this.files.length > 0) {
+        label.innerHTML = "✅ Selected file: <strong>" + this.files[0].name + "</strong>";
+    }
+});
+</script>
+
+</body>
+</html>
+
